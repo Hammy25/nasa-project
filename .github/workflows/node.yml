@@ -7,10 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
-    with:
-      node-version: '18.14.0'
-    - run: npm install
-    - run: npm run build --prefix client
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        name: '18.14.0'
+      - run: npm install
+      - run: npm run build --prefix client
