@@ -6,9 +6,11 @@ on:
     branches: [master]
 jobs:
   build:
-    runs-on: [ubuntu-latest, windows-latest]
+    runs-on: ubuntu-latest
   steps:
+    name: Checkout
     -uses: actions/checkout@v2
+
     -name: Setting up node
     uses: actions/setup-node@v2
     with:
