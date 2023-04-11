@@ -1,0 +1,8 @@
+# Files to ignore
+nasa-api-pass.txt
+server/output.txt
+
+# Folders to ignore
+client/node_modules
+server/node_modules
+node_modules
